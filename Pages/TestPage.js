@@ -2,6 +2,6 @@ import React from 'react'
 
 export const TestPage = () => {
   return (
-    <div>TestPage Test Test</div>
+    <div>TestPage Test Test test</div>
   )
 }
