@@ -18,19 +18,20 @@ const Header = () => {
             <Collapse navbar>
                 <Nav className='ms-auto' navbar>
                     <NavItem>
-                            <i className='fa fa-home fa-lg' /> Home
+                        <i className='fa fa-home fa-lg' /> Home
                     </NavItem>
                     <NavItem>
-                    <i className='fa fa-info fa-lg' /> About
+                        <i className='fa fa-info fa-lg' /> About
                     </NavItem>
                     <NavItem>
-                       Producers
+                        <i className='fa fa-lg address-book'/> Producers
                     </NavItem>
                     <NavItem>
-                        Events
+                        <i className= 'fa fa-lg fa-calendar' /> Events
                     </NavItem>
                     <NavItem>
-                        Market
+                        <i className= 'fa fa-lg fa-shop' /
+                        > Market
                     </NavItem>
                 </Nav>
             </Collapse>
