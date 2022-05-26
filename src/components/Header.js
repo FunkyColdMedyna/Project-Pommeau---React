@@ -1,37 +1,54 @@
+// import { useState } from 'react';
 import {
     Navbar,
     NavbarBrand,
     Collapse,
     Nav,
     NavItem,
+    NavbarToggler,
 } from 'reactstrap';
 import ApplE from '../app/assets/images/ApplE.jpeg'
 import { NavLink } from 'react-router-dom';
 
 const Header = () => {
+    // const[menuOpen, setMenuOpen] = useState(false);
 
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
                 <img src={ApplE} alt='apple' className='float-start' />
+                <h1 className='mt-1'>Project Pommeau</h1>
             </NavbarBrand>
+            <NavbarToggler />
+            {/* onClick={() => setMenuOpen(!menuOpen)} > */}
             <Collapse navbar>
+            {/* isOpen={menuOpen}  */}
                 <Nav className='ms-auto' navbar>
                     <NavItem>
-                        <i className='fa fa-home fa-lg' /> Home
+                        <NavLink className ='nav-link' to='/'>
+                            <i className='fa fa-home fa-lg' /> Home
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <i className='fa fa-info fa-lg' /> About
+                        <NavLink className='nav-link' to='about'>
+                            <i className='fa fa-info fa-lg' /> About
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <i className='fa fa-lg address-book'/> Producers
+                        <NavLink className = 'nav-link' to='producers'>
+                            <i className='fa fa-lg fa-id-badge'/> Producers
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <i className= 'fa fa-lg fa-calendar' /> Events
+                        <NavLink className='nav-link' to='events'>
+                            <i className= 'fa fa-lg fa-calendar' /> Events
+                        </NavLink>
                     </NavItem>
                     <NavItem>
-                        <i className= 'fa fa-lg fa-shop' /
-                        > Market
+                        <NavLink className='nav-link' to='market'>
+                            <i className= 'fa fa-lg fa-shopping-bag' />
+                            Market
+                        </NavLink>
                     </NavItem>
                 </Nav>
             </Collapse>
