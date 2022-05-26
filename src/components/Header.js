@@ -7,6 +7,8 @@ import {
     NavItem,
     NavbarToggler,
 } from 'reactstrap';
+import { NavLink } from 'react-router-dom';
+
 
 const Header = () => {
     // const[menuOpen, setMenuOpen] = useState(false);
@@ -14,7 +16,6 @@ const Header = () => {
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
-                <img src={ApplE} alt='apple' className='float-start' />
                 <h1 className='mt-1'>Project Pommeau</h1>
             </NavbarBrand>
             <NavbarToggler />
