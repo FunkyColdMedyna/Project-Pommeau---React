@@ -5,15 +5,13 @@ import {
     Nav,
     NavItem,
 } from 'reactstrap';
-import ApplE from '../app/assets/images/ApplE.jpeg'
-import { NavLink } from 'react-router-dom';
 
 const Header = () => {
 
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
-                <img src={ApplE} alt='apple' className='float-start' />
+                <img src='http://placekitten.com/200/200'alt='logo' className='float-start' />            
             </NavbarBrand>
             <Collapse navbar>
                 <Nav className='ms-auto' navbar>
