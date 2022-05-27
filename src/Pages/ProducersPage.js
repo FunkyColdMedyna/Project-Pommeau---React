@@ -1,6 +1,6 @@
 import {Col, Row, Container, Card, CardBody } from 'reactstrap';
-import ProducerCard from '../components/ProducerCard';
-import FeaturedProducerCard from '../components/FeaturedProducerCard';
+import ProducerCard from '../features/producers/ProducerCard';
+import FeaturedProducerCard from '../features/producers/FeaturedProducerCard';
 
 
 const ProducersPage = () => {
