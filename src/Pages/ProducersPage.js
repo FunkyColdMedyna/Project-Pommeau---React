@@ -1,5 +1,6 @@
 import {Col, Row, Container, Card, CardBody } from 'reactstrap';
 import ProducerCard from '../components/ProducerCard';
+import FeaturedProducerCard from '../components/FeaturedProducerCard';
 
 
 const ProducersPage = () => {
@@ -13,7 +14,7 @@ const ProducersPage = () => {
                     </p>
                 </Col>
                 <Col className='col-12 my-2'>
-                    {/* Featured Producer Card */}
+                    <FeaturedProducerCard />
                 </Col>
                 <Col className='col-6 my-1'>
                     <ProducerCard />
