@@ -1,6 +1,8 @@
 // referred to as 'home' 
 import {Col, Row, Container, Card, CardBody, CardHeader} from 'reactstrap';
 import FeaturedEventCard from '../components/FeaturedEventCard';
+import FeaturedProducerCard from '../components/FeaturedProducerCard';
+import SubscriptionTiers from '../components/SubscriptionTiers';
 
 const InCider = () => {
     return (
@@ -12,10 +14,13 @@ const InCider = () => {
                 bringing you news and 'an apple a day'
                     </p>
                 </Col>
-                <Col className='col-12'>
+                <Col className='col-6'>
                     <FeaturedEventCard />
                 </Col>
-                <Col>
+                <Col className='col-6'>
+                    <FeaturedProducerCard />
+                </Col>
+                <Col className='col-12 m-3'>
                     <Card className='bg-light mt-3'>
                         <CardBody>
                             <blockquote className='blockquote m-2'>
@@ -37,28 +42,7 @@ const InCider = () => {
             </Row>
             <Row>
                 <Col mt='3'>
-                    <Card>
-                        <CardHeader >
-                            <h3>Subscription Tiers</h3>
-                        </CardHeader >
-                        <CardBody >
-                            <Row>
-                                <Col sm='4'>
-                                    <h4>Free</h4>
-                                    <p>Details about free service</p>
-                                    {/* table? */}
-                                </Col>
-                                <Col className='sm-4'>
-                                    <h4>Cheap</h4>
-                                    <p>Details about middle tier service</p>
-                                </Col>
-                                <Col sm='4'>
-                                    <h4>Expensive</h4>
-                                    <p>details about Expensive/top tier service</p>
-                                </Col>
-                            </Row>
-                        </CardBody>
-                    </Card>
+                    <SubscriptionTiers />
                 </Col>
             </Row>
         </Container>

@@ -28,11 +28,6 @@ const Header = () => {
                         </NavLink>
                     </NavItem>
                     <NavItem>
-                        <NavLink className='nav-link' to='about'>
-                            <i className='fa fa-info fa-lg' /> About
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
                         <NavLink className = 'nav-link' to='producers'>
                             <i className='fa fa-lg fa-id-badge'/> Producers
                         </NavLink>
@@ -46,6 +41,11 @@ const Header = () => {
                         <NavLink className='nav-link' to='market'>
                             <i className= 'fa fa-lg fa-shopping-bag' />
                             Market
+                        </NavLink>
+                    </NavItem>
+                    <NavItem>
+                        <NavLink className='nav-link' to='about'>
+                            <i className='fa fa-info fa-lg' /> About
                         </NavLink>
                     </NavItem>
                     {/* Login - needs form/modal */}

@@ -1,39 +1,39 @@
-import bootStrapLogo from '../assets/img/bootstrap-logo.png';
-// import gitLogo from '../assets/img/git-logo.png';
-// import mongoLogo from '../assets/img/mongo-logo.png';
-// import nodeLogo from '../assets/img/node-logo.png';
+import Apple2 from '../assets/images/apple2.png';
+import Apple3 from '../assets/images/apple3.png';
+import Apple4 from '../assets/images/apple4.png';
+import Apple5 from '../assets/images/apple5.png';
 
 export const PRODUCERS = [
     {
         id: 0,
-        name: 'Bootstrap Outfitters',
-        image: bootStrapLogo,
+        name: 'Producer1',
+        image: {Apple2},
         featured: false,
         description:
-            "Bootstrap Outfitters supplies you with the gear you need at prices you can't beat."
+            "Producer1 supplies you with the cider you need at prices you can't beat. Family run for 100 generations, they've actually been around longer than our great nation. Respect their traditions and their palate"
     },
     {
         id: 1,
-        name: 'Git Out Expeditions',
-        image: gitLogo,
+        name: 'Producer2',
+        image: {Apple3},
         featured: false,
         description:
-            'Join Git Out Expeditions to explore new horizons with a group of other adventurers!'
+            'Producer2 is a hedge-fund tycoon turned native. Purchasing a fallow orchard and re-vitlizing the local community within the hudson valley. This producer has added dozens of jobs and brings along some very traditional dry ciders. Focusing on technique and innovation to bring their products into the 22nd century.'
     },
     {
         id: 2,
-        name: 'Mongo Fly Shop',
-        image: mongoLogo,
+        name: 'Producer3',
+        image: {Apple4},
         featured: false,
         description:
-            'Need a new fishing pole, a tacklebox, or flies of all kinds? Stop by Mongo Fly Shop.'
+            'Need a no-frills and simple cider? Not really concerned with aesthetics and all of the hard work that goes into label making? Neither is Producer3! They do the bare minimum requirements for the governments paperwork so they can put all of their effort into a delicious and not overly complex line of ciders; ranging from bone dry to sickly sweet. Producer 3 is a no frills & no nonsense producer who will get you a great product at an affordable price'
     },
     {
         id: 3,
-        name: 'Node Outdoor Apparel',
-        image: nodeLogo,
-        featured: true,
+        name: 'Producer4',
+        image: {Apple5},
+        featured: false,
         description:
-            'From polar fleeces to swimsuits, hiking boots to waders, a visit to Node will be sure to get you covered.'
+            'Producer4 is a wine-maker turned Pommelier. Their love and their dedication to the craft really shines through in their product. Reminiscent of some of the greater houses of Champagne this cider has fooled many a proffessional in blind tastings. Some have even called them the `Selosse of the Hudson Valley`.'
     }
 ];

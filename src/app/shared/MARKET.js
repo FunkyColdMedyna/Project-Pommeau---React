@@ -1,0 +1,1 @@
+// array of products to display in market
