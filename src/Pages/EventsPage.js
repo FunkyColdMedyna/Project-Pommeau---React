@@ -9,7 +9,7 @@ const EventsPage = () => {
                 <Col mt='1'>
                     <h3>Events</h3>
                     <p>
-                Whats happening?
+                Whats happening? ... or some would say...what poppin'?
                     </p>
                 </Col>
             </Row>
@@ -19,7 +19,7 @@ const EventsPage = () => {
                 </Col>
             </Row>
             <Row>
-                <Col m='1'>
+                <Col m='1' >
                     <EventCard />
                 </Col>
             </Row>

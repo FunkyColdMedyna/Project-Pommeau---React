@@ -11,7 +11,6 @@ const InCider = () => {
                     <p>
                 bringing you news and 'an apple a day'
                     </p>
-                    <img src='./app/apple9.png'></img>
                 </Col>
                 <Col className='col-12'>
                     <FeaturedEventCard />
