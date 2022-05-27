@@ -20,6 +20,8 @@ const FeaturedEventCard = () => {
                                 <br></br>
                                 contact
                                 <br></br>
+                                bio
+                                <br></br>
                                 phone num
                                 <br></br>
                                 email 
