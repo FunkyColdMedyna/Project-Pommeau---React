@@ -6,20 +6,20 @@ const InCider = () => {
     return (
         <Container>
             <Row className='row-content'>
-                <Col sm='6'>
-                    <h3>In-Cider</h3>
+                <Col className='col-12'>
+                    <h1>In-Cider</h1>
                     <p>
                 bringing you news and 'an apple a day'
                     </p>
                     <img src='./app/apple9.png'></img>
                 </Col>
-                <Col sm='6'>
+                <Col className='col-12'>
                     <FeaturedEventCard />
                 </Col>
                 <Col>
                     <Card className='bg-light mt-3'>
                         <CardBody>
-                            <blockquote className='blockquote'>
+                            <blockquote className='blockquote m-2'>
                                 <p> I will not follow where the path may lead, but I
                                     will go where there is no path, and I will leave
                                     a trail.
@@ -49,7 +49,7 @@ const InCider = () => {
                                     <p>Details about free service</p>
                                     {/* table? */}
                                 </Col>
-                                <Col sm='4'>
+                                <Col className='sm-4'>
                                     <h4>Cheap</h4>
                                     <p>Details about middle tier service</p>
                                 </Col>

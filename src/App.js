@@ -16,6 +16,7 @@ function App() {
           <Route path='/' element={<InCider />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='producers' element={<ProducersPage />}/>
+          {/* eventually map out producers to individual detail page.'producers/:producerId' line above should give each producer a specific address and route */}
           <Route path='events' element={<EventsPage />} />
           <Route path='market' element={<MarketPage />} />
         </Routes>
