@@ -17,11 +17,12 @@ const Header = () => {
         <Navbar dark color='primary' sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
                 <h1 className='mt-1'>Project Pommeau</h1>
+                {/* image / brand logo */}
             </NavbarBrand>
             <NavbarToggler />
-            {/* onClick={() => setMenuOpen(!menuOpen)} > */}
-            <Collapse navbar>
-            {/* isOpen={menuOpen}  */}
+            {/* onClick={() => setMenuOpen(!menuOpen)}  */}
+            <Collapse navbar  >
+            {/* isOpen={menuOpen} */}
                 <Nav className='ms-auto' navbar>
                     <NavItem>
                         <NavLink className ='nav-link' to='/'>
@@ -49,6 +50,7 @@ const Header = () => {
                             Market
                         </NavLink>
                     </NavItem>
+                    {/* Login - needs form/modal */}
                 </Nav>
             </Collapse>
         </Navbar>

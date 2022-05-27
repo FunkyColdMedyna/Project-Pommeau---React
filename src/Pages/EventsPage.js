@@ -1,5 +1,6 @@
 import {Col, Row, Container } from 'reactstrap';
 import EventCard from '../components/EventCard';
+import FeaturedEventCard from '../components/FeaturedEventCard';
 
 const EventsPage = () => {
     return (
@@ -8,12 +9,16 @@ const EventsPage = () => {
                 <Col mt='1'>
                     <h3>Events</h3>
                     <p>
-                filler text
+                Whats happening?
                     </p>
                 </Col>
             </Row>
             <Row> 
-            {/* featured news first col-12 */}
+                <Col>
+                    <FeaturedEventCard />
+                </Col>
+            </Row>
+            <Row>
                 <Col m='1'>
                     <EventCard />
                 </Col>

@@ -1,36 +1,34 @@
 import {Col, Row, Container, Card, CardBody } from 'reactstrap';
+import ProducerCard from '../components/ProducerCard';
 
 
 const ProducersPage = () => {
     return (
         <Container>
             <Row className='row-content'>
-                <Col sm='6'>
-                    <h3>Header</h3>
+                <Col className= 'col-12'>
+                    <h2>Producers</h2>
                     <p>
-                filler text
+                find out who is making and growing the product
                     </p>
                 </Col>
-                {/* <Col sm='6'> */}
-                    {/* <Card>
-                        <CardHeader className='bg-primary text-white'>
-                            <h3>Facts at a Glance</h3>
-                        </CardHeader>
-                        <CardBody>
-                            <dl className='row'>
-                                    <dt className='col-6'>Founded</dt>
-                                    <dd className='col-6'>February 3, 2016</dd>
-                                    <dt className='col-6'>No. of Campsites in 2019</dt>
-                                    <dd className='col-6'>563</dd>
-                                    <dt className='col-6'>No. of Reviews in 2019</dt>
-                                    <dd className='col-6'>4388</dd>
-                                    <dt className='col-6'>Employees</dt>
-                                    <dd className='col-6'>42</dd>
-                            </dl>
-                        </CardBody>
-                    </Card> */}
-                {/* </Col> */}
-                <Col>
+                <Col className='col-12 my-2'>
+                    {/* Featured Producer Card */}
+                </Col>
+                <Col className='col-6 my-1'>
+                    <ProducerCard />
+                </Col>
+                <Col className='col-6 my-1'>
+                        <ProducerCard />
+                </Col>
+                <Col className='col-6 my-1'>
+                        <ProducerCard />
+                </Col>
+                <Col className='col-6 my-1'>
+                        <ProducerCard />
+                </Col>
+
+                <Col className='col-12'>
                     <Card className='bg-light mt-3'>
                         <CardBody>
                             <blockquote className='blockquote'>

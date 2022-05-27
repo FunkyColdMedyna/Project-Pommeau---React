@@ -1,36 +1,20 @@
+// referred to as 'home' 
 import {Col, Row, Container, Card, CardBody, CardHeader} from 'reactstrap';
-
+import FeaturedEventCard from '../components/FeaturedEventCard';
 
 const InCider = () => {
     return (
         <Container>
-            {/* <SubHeader current='About Us'>
-            </SubHeader> */}
             <Row className='row-content'>
                 <Col sm='6'>
-                    <h3>Our Mission</h3>
+                    <h3>In-Cider</h3>
                     <p>
-                this is our mission
+                bringing you news and 'an apple a day'
                     </p>
+                    <img src='./app/apple9.png'></img>
                 </Col>
                 <Col sm='6'>
-                    <Card>
-                        <CardHeader className='bg-primary text-white'>
-                            <h3>Facts at a Glance</h3>
-                        </CardHeader>
-                        <CardBody>
-                            <dl className='row'>
-                                    <dt className='col-6'>Founded</dt>
-                                    <dd className='col-6'>February 3, 2016</dd>
-                                    <dt className='col-6'>No. of Campsites in 2019</dt>
-                                    <dd className='col-6'>563</dd>
-                                    <dt className='col-6'>No. of Reviews in 2019</dt>
-                                    <dd className='col-6'>4388</dd>
-                                    <dt className='col-6'>Employees</dt>
-                                    <dd className='col-6'>42</dd>
-                            </dl>
-                        </CardBody>
-                    </Card>
+                    <FeaturedEventCard />
                 </Col>
                 <Col>
                     <Card className='bg-light mt-3'>
@@ -48,6 +32,32 @@ const InCider = () => {
                                     </cite>
                                 </footer>
                             </blockquote>
+                        </CardBody>
+                    </Card>
+                </Col>
+            </Row>
+            <Row>
+                <Col mt='3'>
+                    <Card>
+                        <CardHeader >
+                            <h3>Subscription Tiers</h3>
+                        </CardHeader >
+                        <CardBody >
+                            <Row>
+                                <Col sm='4'>
+                                    <h4>Free</h4>
+                                    <p>Details about free service</p>
+                                    {/* table? */}
+                                </Col>
+                                <Col sm='4'>
+                                    <h4>Cheap</h4>
+                                    <p>Details about middle tier service</p>
+                                </Col>
+                                <Col sm='4'>
+                                    <h4>Expensive</h4>
+                                    <p>details about Expensive/top tier service</p>
+                                </Col>
+                            </Row>
                         </CardBody>
                     </Card>
                 </Col>
