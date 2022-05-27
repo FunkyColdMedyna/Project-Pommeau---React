@@ -1,4 +1,4 @@
-// import { useState } from 'react';
+import { useState } from 'react';
 import {
     Navbar,
     NavbarBrand,
@@ -8,21 +8,21 @@ import {
     NavbarToggler,
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
+// logo import 
 
 
 const Header = () => {
-    // const[menuOpen, setMenuOpen] = useState(false);
+    const[menuOpen, setMenuOpen] = useState(false);
 
     return (
         <Navbar dark color='primary' sticky='top' expand='md'>
             <NavbarBrand className='ms-5' href='/'>
+                {/* image src='' alt='' className='float-start' */}
                 <h1 className='mt-1'>Project Pommeau</h1>
                 {/* image / brand logo */}
             </NavbarBrand>
-            <NavbarToggler />
-            {/* onClick={() => setMenuOpen(!menuOpen)}  */}
-            <Collapse navbar  >
-            {/* isOpen={menuOpen} */}
+            <NavbarToggler onClick = {() => setMenuOpen(!menuOpen)} />
+            <Collapse isOpen={menuOpen} navbar >
                 <Nav className='ms-auto' navbar>
                     <NavItem>
                         <NavLink className ='nav-link' to='/'>
