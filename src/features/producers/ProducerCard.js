@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom';
 
 const ProducerCard = ({ producer }) => {
     const { id, image, name } = producer;
-    console.log(producer);
+    // console.log(producer);
     return (
         <Link to={`${id}`} >
             <Card>
