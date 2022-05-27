@@ -1,5 +1,5 @@
 import { Col, Row, Card, CardBody, CardHeader } from 'reactstrap'; 
-import Apple4 from '../app/assets/images/apple4.png';
+import Apple4 from '../../app/assets/images/apple4.png';
 
 const FeaturedProducerCard = () => {
     return (

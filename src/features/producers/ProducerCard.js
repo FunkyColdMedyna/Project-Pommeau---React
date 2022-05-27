@@ -1,6 +1,6 @@
 import React from "react";
 import { Card, CardHeader, CardBody } from 'reactstrap';
-import Apple6 from '../app/assets/images/apple6.png';
+import Apple6 from '../../app/assets/images/apple6.png';
 
 const ProducerCard = () => {
     return (

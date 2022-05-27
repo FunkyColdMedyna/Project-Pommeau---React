@@ -1,5 +1,5 @@
 import { Col, Row, Card, CardBody, CardHeader } from 'reactstrap'; 
-import Orchard1 from '../app/assets/images/orchard1.png';
+import Orchard1 from '../../app/assets/images/orchard1.png';
 
 const FeaturedEventCard = () => {
     return(

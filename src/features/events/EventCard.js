@@ -1,5 +1,5 @@
 import { Col, Card, CardBody, CardHeader } from 'reactstrap'; 
-import ApplE from '../app/assets/images/ApplE.jpeg';
+import ApplE from '../../app/assets/images/ApplE.jpeg';
 
 const EventCard = () => {
     return(

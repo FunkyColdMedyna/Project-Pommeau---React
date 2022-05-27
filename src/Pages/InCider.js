@@ -1,7 +1,7 @@
 // referred to as 'home' 
 import {Col, Row, Container, Card, CardBody, CardHeader} from 'reactstrap';
-import FeaturedEventCard from '../components/FeaturedEventCard';
-import FeaturedProducerCard from '../components/FeaturedProducerCard';
+import FeaturedEventCard from '../features/events/FeaturedEventCard';
+import FeaturedProducerCard from '../features/producers/FeaturedProducerCard';
 import SubscriptionTiers from '../components/SubscriptionTiers';
 
 const InCider = () => {
