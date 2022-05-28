@@ -2,9 +2,11 @@ import {Col, Row, Container, Card, CardBody } from 'reactstrap';
 // import ProducerCard from '../features/producers/ProducerCard';
 import FeaturedProducerCard from '../features/producers/FeaturedProducerCard';
 import ProducersList from '../features/producers/ProducersList';
-
+import { selectRandomProducer } from '../features/producers/producersSlice';
+import ProducerDetail from '../features/producers/ProducerDetail';
 
 const ProducersPage = () => {
+    const selectedProducer = selectRandomProducer();
     return (
         <Container>
             <Row className='row-content'>
@@ -15,7 +17,7 @@ const ProducersPage = () => {
                     </p>
                 </Col>
                 <Col className='col-12 my-2'>
-                    <FeaturedProducerCard />
+                    <ProducerDetail producer={selectedProducer} />
                 </Col>
                 <Col>
                 <ProducersList  />
