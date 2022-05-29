@@ -10,8 +10,8 @@ const ProducersList = () => {
             {producers.map((producer) => {
                 return (
                     <Col 
-                        md='5' 
-                        className='m-4' 
+                        md='4' 
+                        // className='m-4' 
                         key={producer.id}
                     >
                         <ProducerCard producer={producer} />

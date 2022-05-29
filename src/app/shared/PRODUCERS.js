@@ -2,6 +2,8 @@ import apple2 from '../assets/images/apple2.png'
 import apple3 from '../assets/images/apple3.png';
 import apple4 from '../assets/images/apple4.png';
 import apple5 from '../assets/images/apple5.png';
+import apple6 from '../assets/images/apple6.png';
+import apple7 from '../assets/images/apple7.png'
 
 export const PRODUCERS = [
     {
@@ -41,5 +43,21 @@ export const PRODUCERS = [
         featured: false,
         description:
             'Producer4 is a wine-maker turned Pommelier. Their love and their dedication to the craft really shines through in their product. Reminiscent of some of the greater houses of Champagne this cider has fooled many a proffessional in blind tastings. Some have even called them the `Selosse of the Hudson Valley`.'
+    },
+    {
+        id: 4,
+        name: 'Producer5',
+        image: apple6,
+        featured: false,
+        description:
+            'Producer5 is a wine-maker turned Pommelier. Their love and their dedication to the craft really shines through in their product. Reminiscent of some of the greater houses of Champagne this cider has fooled many a proffessional in blind tastings. Some have even called them the `Selosse of the Hudson Valley`.'
+    },
+    {
+        id: 5,
+        name: 'Producer6',
+        image: apple6,
+        featured: false,
+        description:
+            'Producer6 is a wine-maker turned Pommelier. Their love and their dedication to the craft really shines through in their product. Reminiscent of some of the greater houses of Champagne this cider has fooled many a proffessional in blind tastings. Some have even called them the `Selosse of the Hudson Valley`.'
     }
 ];

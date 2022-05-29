@@ -2,32 +2,57 @@
 // import { Card, CardHeader, CardBody } from 'reactstrap';
 // import Apple6 from '../../app/assets/images/apple6.png';
 
-
-import { Card, CardImgOverlay, CardImg, CardTitle } from 'reactstrap';
-import { Link } from 'react-router-dom';
+import { Card, CardTitle, CardBody, CardText, CardImg, Button } from 'reactstrap';
+// import { Card, CardImgOverlay, CardImg, CardTitle } from 'reactstrap';
+// import { Link } from 'react-router-dom';
 
 
 
 
 const ProducerCard = ({ producer }) => {
-    const { id, image, name } = producer;
-    // console.log(producer);
+    const { id, image, name, description } = producer;
     return (
-        <Link to={`${id}`} >
             <Card>
-                <CardImg width='100%' 
+                <CardImg varient='top' 
                     src={image} 
                     alt={name}
                 /> 
-                <CardImgOverlay>
-                    <CardTitle>{name}</CardTitle>
-                </CardImgOverlay>
+                <CardBody>
+                    <CardTitle tag='h5'>{name}</CardTitle>
+                <CardText>
+                    {description}
+                </CardText>
+                <Button color='primary'>
+                    Learn More
+                </Button>
+
+                </CardBody>
             </Card>
-        </Link>
     )
 };
 
 export default ProducerCard;
+
+// const ProducerCard = ({ producer }) => {
+//     const { id, image, name, description } = producer;
+//     // console.log(producer);
+//     return (
+//         <Link to={`${id}`} >
+//             <Card>
+//                 <CardImg width='100%'
+//                     src={image} 
+//                     alt={name}
+//                 /> 
+//                 <CardImgOverlay>
+//                     <CardTitle>{name}</CardTitle>
+//                 </CardImgOverlay>
+//                 {description}
+//             </Card>
+//         </Link>
+//     )
+// };
+
+// export default ProducerCard;
 
 
 
