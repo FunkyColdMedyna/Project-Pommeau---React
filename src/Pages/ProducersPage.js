@@ -1,19 +1,20 @@
 import {Col, Row, Container, Card, CardBody,  } from 'reactstrap';
-// import ProducerCard from '../features/producers/ProducerCard';
 import ProducersList from '../features/producers/ProducersList';
-// import { selectRandomProducer } from '../features/producers/producersSlice';
 import ProducerDetail from '../features/producers/ProducerDetail';
 import { selectProducerById } from '../features/producers/producersSlice';
-// import { useState } from 'react';
+// import { selectRandomProducer } from '../features/producers/producersSlice';
+// import ProducerCard from '../features/producers/ProducerCard';
+import { useState } from 'react';
 
 const ProducersPage = () => {
-    // const selectedProducer = selectRandomProducer();
-    // const [producerId, setProducerId] = useState(0);
-    // const selectedProducer = selectProducerById(producerId)
-    
-    const toggleProducer = () => {
-        selectedProducer = selectRandomCampsite();
-    };
+    const [producerId, setProducerId] = useState(0);
+
+    const selectedProducer = selectProducerById(producerId);
+     // const selectedProducer = selectRandomProducer();
+    // const toggleProducer = () => {
+    //     selectedProducer = selectRandomProducer();
+    //     console.log(selectedProducer)
+    // };
 
     return (
         <Container>
@@ -25,23 +26,11 @@ const ProducersPage = () => {
                     </p>
                 </Col>
                 <Col className='col-12 my-2'>
-                    {/* <ProducerDetail producer={} /> */}
+                    <ProducerDetail producer={selectedProducer} />
                 </Col>
                 <Col>
-                <ProducersList setProducerId={setProducerId} />
-                </Col>
-                {/* <Col className='col-6 my-1'>
-                    <ProducerCard />
-                </Col>
-                <Col className='col-6 my-1'>
-                        <ProducerCard />
-                </Col>
-                <Col className='col-6 my-1'>
-                        <ProducerCard />
-                </Col>
-                <Col className='col-6 my-1'>
-                        <ProducerCard />
-                </Col> */} 
+                    <ProducersList setProducerId={setProducerId}/>
+                </Col> 
 
                 <Col className='col-12'>
                     <Card className='bg-light mt-3'>

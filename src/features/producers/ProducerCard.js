@@ -4,7 +4,7 @@
 
 import { Card, CardTitle, CardBody, CardText, CardImg, Button } from 'reactstrap';
 // import { Card, CardImgOverlay, CardImg, CardTitle } from 'reactstrap';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,6 +12,7 @@ import { Card, CardTitle, CardBody, CardText, CardImg, Button } from 'reactstrap
 const ProducerCard = ({ producer }) => {
     const { id, image, name, description } = producer;
     return (
+        // <Link to={id}>
             <Card>
                 <CardImg varient='top' 
                     src={image} 
@@ -20,15 +21,13 @@ const ProducerCard = ({ producer }) => {
                 <CardBody>
                     <CardTitle tag='h5'>{name}</CardTitle>
                 <CardText>
-                    {description}
+                    {/* {description} */}
                 </CardText>
-                <Button color='primary'>
-                    Learn More
-                </Button>
-
                 </CardBody>
             </Card>
-    )
+     ) ;
+    /* </Link> */
+    
 };
 
 export default ProducerCard;
