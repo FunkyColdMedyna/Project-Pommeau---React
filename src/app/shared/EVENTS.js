@@ -1,5 +1,5 @@
 // array of events to display 
-import Apple7 from '../app/assets/images/apple7.png';
+import Apple7 from '../../app/assets/images/apple7.png';
 
 export const EVENTS = [
     {

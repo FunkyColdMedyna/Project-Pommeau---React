@@ -1,7 +1,7 @@
 import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
 
-const ProducerDetail = ( {producer} ) => {
-    const { image, name, description } = producer;
+const EventDetail = ( {event} ) => {
+    const { image, name, description } = event;
 
     return (
         <Col md='12' className='m-4'>
@@ -16,4 +16,4 @@ const ProducerDetail = ( {producer} ) => {
     );
 };
 
-export default ProducerDetail;
+export default EventDetail;

@@ -1,6 +1,7 @@
 import {Col, Row, Container } from 'reactstrap';
-import EventCard from '../features/events/EventCard.js'
-import FeaturedEventCard from '../features/events/FeaturedEventCard.js';
+// import EventCard from '../features/events/EventCard.js'
+import EventsList from '../features/events/EventsList.js';
+// import FeaturedEventCard from '../features/events/FeaturedEventCard.js';
 
 const EventsPage = () => {
     return (
@@ -14,21 +15,13 @@ const EventsPage = () => {
                 </Col>
             </Row>
             <Row> 
-                <Col>
-                    <FeaturedEventCard />
+                <Col className='sm-6'>
+                    <div>
+                        <p>Calendar Placeholder</p>
+                    </div>
                 </Col>
-            </Row>
-            <Row>
-                <Col m='1' >
-                    <EventCard />
-                </Col>
-            </Row>
-            <Row>
-                <Col mx='1' sm='6'>
-                    <EventCard />
-                </Col>
-                <Col mx='1' sm='6'>
-                    <EventCard />
+                <Col className='sm-6'>
+                    <EventsList />
                 </Col>
             </Row>
         </Container>
