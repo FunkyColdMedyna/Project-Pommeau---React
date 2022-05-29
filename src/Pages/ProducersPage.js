@@ -1,12 +1,20 @@
-import {Col, Row, Container, Card, CardBody } from 'reactstrap';
+import {Col, Row, Container, Card, CardBody,  } from 'reactstrap';
 // import ProducerCard from '../features/producers/ProducerCard';
-import FeaturedProducerCard from '../features/producers/FeaturedProducerCard';
 import ProducersList from '../features/producers/ProducersList';
-import { selectRandomProducer } from '../features/producers/producersSlice';
+// import { selectRandomProducer } from '../features/producers/producersSlice';
 import ProducerDetail from '../features/producers/ProducerDetail';
+import { selectProducerById } from '../features/producers/producersSlice';
+// import { useState } from 'react';
 
 const ProducersPage = () => {
-    const selectedProducer = selectRandomProducer();
+    // const selectedProducer = selectRandomProducer();
+    // const [producerId, setProducerId] = useState(0);
+    // const selectedProducer = selectProducerById(producerId)
+    
+    const toggleProducer = () => {
+        selectedProducer = selectRandomCampsite();
+    };
+
     return (
         <Container>
             <Row className='row-content'>
@@ -17,10 +25,10 @@ const ProducersPage = () => {
                     </p>
                 </Col>
                 <Col className='col-12 my-2'>
-                    <ProducerDetail producer={selectedProducer} />
+                    {/* <ProducerDetail producer={} /> */}
                 </Col>
                 <Col>
-                <ProducersList  />
+                <ProducersList setProducerId={setProducerId} />
                 </Col>
                 {/* <Col className='col-6 my-1'>
                     <ProducerCard />

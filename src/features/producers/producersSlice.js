@@ -7,3 +7,8 @@ export const selectAllProducers = () => {
 export const selectRandomProducer = () => {
     return PRODUCERS[Math.floor(PRODUCERS.length * Math.random())];
 };
+
+export const selectProducerById = (id) => {
+    return PRODUCERS.find((producer) => producer.id === id);
+}
+

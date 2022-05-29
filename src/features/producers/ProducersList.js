@@ -3,16 +3,16 @@ import ProducerCard from "./ProducerCard";
 import { Col, Row } from "reactstrap";
 import { selectAllProducers } from "./producersSlice";
 
-const ProducersList = () => {
+const ProducersList = ({setProducerId}) => {
     const producers = selectAllProducers();
     return (
         <Row className="ms-auto">
             {producers.map((producer) => {
                 return (
                     <Col 
-                        md='4' 
-                        // className='m-4' 
+                        md='4'
                         key={producer.id}
+                        onClick={() => setProducerId(producer.id)}
                     >
                         <ProducerCard producer={producer} />
                     </Col>
