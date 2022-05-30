@@ -1,16 +1,33 @@
 import {Col, Row, Container, Card, CardBody } from 'reactstrap';
+import MarketsList from '../features/Market/MarketsList';
+import MarketDetail from '../features/Market/MarketDetail';
+import { selectMarketById } from '../features/Market/marketsSlice';
+import { useState } from 'react';
+
 
 
 const MarketPage = () => {
+    const [MarketId, setMarketId] = useState(0);
+
+    const selectedMarket = selectMarketById(MarketId);
     return (
         <Container>
             <Row className='row-content'>
-                <Col sm='6'>
+                {/* <Col sm='6'>
                     <h3>Header</h3>
                     <p>
                 filler text
                     </p>
+                </Col> */}
+                <Col className='col-12 my-2'>
+                    <MarketDetail market={selectedMarket} />
                 </Col>
+                <Col>
+                    <MarketsList setMarketId={setMarketId}/>
+                </Col>
+            </Row>
+
+
                 {/* <Col sm='6'> */}
                     {/* <Card>
                         <CardHeader className='bg-primary text-white'>
@@ -30,6 +47,7 @@ const MarketPage = () => {
                         </CardBody>
                     </Card> */}
                 {/* </Col> */}
+                <Row>
                 <Col>
                     <Card className='bg-light mt-3'>
                         <CardBody>

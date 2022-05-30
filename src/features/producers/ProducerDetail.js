@@ -1,4 +1,4 @@
-import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, Col, CardTitle, CardImgOverlay } from 'reactstrap';
 
 const ProducerDetail = ( {producer} ) => {
     const { image, name, description } = producer;
@@ -11,7 +11,11 @@ const ProducerDetail = ( {producer} ) => {
                     <CardText>{description}</CardText>
                     {/* add links to external producer sites . google maps. etc. producer contact info */}
                 </CardBody>
+                <CardImgOverlay>
+                    <CardTitle>{name}</CardTitle>
+                </CardImgOverlay>
             </Card>
+
         </Col>
     );
 };
