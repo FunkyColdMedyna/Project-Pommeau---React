@@ -25,9 +25,9 @@ const ProducersPage = () => {
                 find out who is making and growing the product
                     </p>
                 </Col>
-                <Col className='col-12 my-2'>
+                {/* <Col className='col-12 my-2'>
                     <ProducerDetail producer={selectedProducer} />
-                </Col>
+                </Col> */}
                 <Col>
                     <ProducersList setProducerId={setProducerId}/>
                 </Col> 
