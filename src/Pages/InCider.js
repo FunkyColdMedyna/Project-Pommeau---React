@@ -4,8 +4,10 @@ import FeaturedEventCard from '../features/events/FeaturedEventCard';
 import FeaturedProducerCard from '../features/producers/FeaturedProducerCard';
 import SubscriptionTiers from '../components/SubscriptionTiers';
 import { selectFeaturedProducer } from '../features/producers/producersSlice';
+// import { selectFeaturedEvent } from '../features/events/eventsSlice';
 
 const InCider = () => {
+    // const items = [selectFeaturedProducer(), selectFeaturedEvent()];
     const producer = selectFeaturedProducer();
     // const { Name, image, description } = producer;
 

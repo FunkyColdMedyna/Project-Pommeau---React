@@ -1,4 +1,4 @@
-import { configureStore } from '@redux-toolkit';
+import { configureStore } from '@reduxjs/toolkit';
 import logger from 'redux-logger';
 
 export const store = configureStore({

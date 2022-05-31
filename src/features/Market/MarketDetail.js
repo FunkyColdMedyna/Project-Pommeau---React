@@ -1,6 +1,6 @@
 import { Card, CardImg, CardHeader, CardText, CardBody, Col, Container, Row, Button } from 'reactstrap';
 
-const MarketDetail = ( {market} ) => {
+const MarketDetail = ( { market } ) => {
     const { image, name, description, price } = market;
 
     return (

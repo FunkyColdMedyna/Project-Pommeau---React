@@ -6,9 +6,11 @@ const SubscriptionTiers = () => {
         <Card>
             <CardHeader >
                 <h3>Subscription Tiers</h3>
+                <>
+                </>
             </CardHeader >
             <CardBody >
-                <Row>
+                <Row className='row-content'>
                     <Col sm='4'>
                         <h4>Free</h4>
                         <p>Details about free service</p>

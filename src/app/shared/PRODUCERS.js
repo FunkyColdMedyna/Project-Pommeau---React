@@ -10,7 +10,7 @@ export const PRODUCERS = [
         id: 0,
         name: 'Producer1',
         image: apple2,
-        featured: true,
+        featured: false,
         description:
             "Producer1 supplies you with the cider you need at prices you can't beat. Family run for 100 generations, they've actually been around longer than our great nation. Respect their traditions and their palate"
     //     comments:[ 
@@ -40,7 +40,7 @@ export const PRODUCERS = [
         id: 3,
         name: 'Producer4',
         image: apple5,
-        featured: false,
+        featured: true,
         description:
             'Producer4 is a wine-maker turned Pommelier. Their love and their dedication to the craft really shines through in their product. Reminiscent of some of the greater houses of Champagne this cider has fooled many a proffessional in blind tastings. Some have even called them the `Selosse of the Hudson Valley`.'
     },
