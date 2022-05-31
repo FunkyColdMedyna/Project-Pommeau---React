@@ -10,5 +10,8 @@ export const selectRandomProducer = () => {
 
 export const selectProducerById = (id) => {
     return PRODUCERS.find((producer) => producer.id === id);
-}
+};
 
+export const selectFeaturedProducer = (featured) => {
+    return PRODUCERS.find((producer) => producer.featured === true) 
+};

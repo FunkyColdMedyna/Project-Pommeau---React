@@ -7,6 +7,7 @@ import MarketPage from './pages/MarketPage';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
+import ProducerDetailPage from './pages/ProducerDetailPage';
 
 function App() {
   return (
@@ -15,7 +16,10 @@ function App() {
         <Routes>
           <Route path='/' element={<InCider />} />
           <Route path='producers' element={<ProducersPage />}/>
-          {/* eventually map out producers to individual detail page.'producers/:producerId' line above should give each producer a specific address and route */}
+          <Route 
+            path='producers/:producerId' 
+            element={<ProducerDetailPage />}
+            />
           <Route path='events' element={<EventsPage />} />
           <Route path='market' element={<MarketPage />} />
           <Route path='about' element={<AboutPage />} />

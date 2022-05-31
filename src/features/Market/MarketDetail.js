@@ -1,19 +1,15 @@
-import { Card, CardImg, CardText, CardBody, Col, Container, Row, Button } from 'reactstrap';
+import { Card, CardImg, CardHeader, CardText, CardBody, Col, Container, Row, Button } from 'reactstrap';
 
 const MarketDetail = ( {market} ) => {
     const { image, name, description, price } = market;
 
     return (
-        <Container>
-        <h1>FEATURED PRODUCT OF THE WEEK</h1>
-        <Row>
-        <Col md='6' >
+        <Col md='12' className='m-1'>
             <Card>
+                <CardHeader>
+                    <h1>FEATURED PRODUCT OF THE WEEK</h1>
+                </CardHeader>
                 <CardImg src={image} alt={name} />
-            </Card>
-        </Col>
-            <Col md='6' >
-            <Card>
                 <CardBody>
                     <CardText>{description}</CardText>
                     <CardText tag='h3'>{price}</CardText>
@@ -22,10 +18,7 @@ const MarketDetail = ( {market} ) => {
                     {/* Design Market Detail */}
                 </CardBody>
             </Card>
-
         </Col>
-        </Row>
-        </Container>
     );
 };
 

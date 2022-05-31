@@ -1,6 +1,6 @@
 import {Col, Row, Container } from 'reactstrap';
-// import EventCard from '../features/events/EventCard.js'
 import EventsList from '../features/events/EventsList.js';
+// import EventCard from '../features/events/EventCard.js'
 // import FeaturedEventCard from '../features/events/FeaturedEventCard.js';
 
 const EventsPage = () => {

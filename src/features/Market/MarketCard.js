@@ -1,11 +1,11 @@
 import { Card, CardTitle, CardBody, CardText, CardImg,} from 'reactstrap';
-
+import { Link } from 'react-router-dom';
 
 
 const MarketCard = ({ market }) => {
-    const { id, image, name, description } = market;
+    const { id, image, name } = market;
     return (
-        // <Link to={id}>
+        <Link to={id}>
             <Card>
                 <CardImg varient='top' 
                     src={image} 
@@ -14,13 +14,11 @@ const MarketCard = ({ market }) => {
                 <CardBody>
                     <CardTitle tag='h5'>{name}</CardTitle>
                 <CardText>
-                    {/* {description} */}
+                    {/* {description} (only first x amount of characters) */}
                 </CardText>
                 </CardBody>
             </Card>
-     ) ;
-    /* </Link> */
-    
+        </Link> 
+    )
 };
-
 export default MarketCard;

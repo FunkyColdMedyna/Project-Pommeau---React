@@ -1,10 +1,17 @@
 // referred to as 'home' 
-import {Col, Row, Container, Card, CardBody, CardHeader} from 'reactstrap';
+import {Col, Row, Container, Card, CardBody, } from 'reactstrap';
 import FeaturedEventCard from '../features/events/FeaturedEventCard';
 import FeaturedProducerCard from '../features/producers/FeaturedProducerCard';
 import SubscriptionTiers from '../components/SubscriptionTiers';
+import { selectFeaturedProducer } from '../features/producers/producersSlice';
 
 const InCider = () => {
+    const producer = selectFeaturedProducer();
+    // const { Name, image, description } = producer;
+
+    // const event = selectFeaturedEvent();
+    // const { name, image, description } = event;
+
     return (
         <Container>
             <Row className='row-content'>
@@ -18,7 +25,7 @@ const InCider = () => {
                     <FeaturedEventCard />
                 </Col>
                 <Col className='col-6'>
-                    <FeaturedProducerCard />
+                    <FeaturedProducerCard producer = {producer} />
                 </Col>
                 <Col className='col-12 m-3'>
                     <Card className='bg-light mt-3'>

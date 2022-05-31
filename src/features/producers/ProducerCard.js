@@ -2,7 +2,7 @@
 // import { Card, CardHeader, CardBody } from 'reactstrap';
 // import Apple6 from '../../app/assets/images/apple6.png';
 
-import { Card, CardTitle, CardBody, CardText, CardImg, Button } from 'reactstrap';
+import { Card, CardTitle, CardBody, CardText, CardImg } from 'reactstrap';
 // import { Card, CardImgOverlay, CardImg, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
 
@@ -10,9 +10,9 @@ import { Link } from 'react-router-dom';
 
 
 const ProducerCard = ({ producer }) => {
-    const { id, image, name, description } = producer;
+    const { id, image, name, } = producer;
     return (
-        // <Link to={id}>
+        <Link to={id}>
             <Card>
                 <CardImg varient='top' 
                     src={image} 
@@ -21,14 +21,14 @@ const ProducerCard = ({ producer }) => {
                 <CardBody>
                     <CardTitle tag='h5'>{name}</CardTitle>
                 <CardText>
-                    {/* {description} */}
+                    {/* {description} only x amount of characters */}
                 </CardText>
                 </CardBody>
             </Card>
-     ) ;
-    /* </Link> */
+        </Link> 
+    )
     
-};
+}
 
 export default ProducerCard;
 

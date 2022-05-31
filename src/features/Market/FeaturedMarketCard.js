@@ -1,31 +1,29 @@
-import { Col, Row, Card, CardBody, CardHeader } from 'reactstrap'; 
-import Apple4 from '../../app/assets/images/apple4.png';
+import { Col, Row, Card, CardBody, CardHeader, CardFooter } from 'reactstrap'; 
+// import Apple4 from '../../app/assets/images/apple4.png';
 
-const FeaturedMarketCard = () => {
+const FeaturedMarketCard = ( marketId ) => {
+    const { id, image, name, description } = marketId;
     return (
         <Card>
             <CardHeader>
-                <h3>Default Featured Market Card</h3>
+                <h3>{ name }</h3>
             </CardHeader>
             <CardBody>
                 <Row>
                     <Col className='col-12'>
-                    <img src={Apple4} alt='orchard picture' width='200rem' />
-                    <p>Default Featured Market info goes here. Price, features, etc.</p>
+                        <img src={image} alt={name} width='200rem' />
                     </Col>
                     <Col className='col-12'>
-                            <p>
-                                Description and additional information 
-                            </p>
-                        </Col>
+                        <p>{description}</p>
+                    </Col>
                 </Row>
-                <footer>
+                <CardFooter>
                     <div>
-                        <p>
+                        <Button onclick= '' >
                            Buy now here
-                        </p>
+                        </Button>
                     </div>
-                </footer>
+                </CardFooter>
             </CardBody>
         </Card>
     )
