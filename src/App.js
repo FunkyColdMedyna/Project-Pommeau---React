@@ -8,6 +8,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import './App.css';
 import ProducerDetailPage from './pages/ProducerDetailPage';
+import EventDetailPage from './pages/EventDetailPage';
 
 function App() {
   return (
@@ -21,6 +22,10 @@ function App() {
             element={<ProducerDetailPage />}
             />
           <Route path='events' element={<EventsPage />} />
+          <Route 
+           path='events/:eventId'
+           element={<EventDetailPage />}
+           />
           <Route path='market' element={<MarketPage />} />
           <Route path='about' element={<AboutPage />} />
         </Routes>

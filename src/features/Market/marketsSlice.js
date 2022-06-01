@@ -21,3 +21,7 @@ export const selectRandomMarket = () => {
 export const selectMarketById = (id) => {
     return  MARKET.find((market) => market.id === id);
 };
+
+export const selectFeaturedMarket = () => {
+    return MARKET.find((market) => market.featured);
+};

@@ -1,6 +1,6 @@
 // referred to as 'home' 
 import {Col, Row, Container, Card, CardBody, } from 'reactstrap';
-import FeaturedEventCard from '../features/events/FeaturedEventCard';
+// import FeaturedEventCard from '../features/events/FeaturedEventCard';
 import FeaturedProducerCard from '../features/producers/FeaturedProducerCard';
 import SubscriptionTiers from '../components/SubscriptionTiers';
 import { selectFeaturedProducer } from '../features/producers/producersSlice';
@@ -9,10 +9,11 @@ import { selectFeaturedProducer } from '../features/producers/producersSlice';
 const InCider = () => {
     // const items = [selectFeaturedProducer(), selectFeaturedEvent()];
     const producer = selectFeaturedProducer();
-    // const { Name, image, description } = producer;
+    console.log(producer);
+    const { name, image, description, } = producer;
 
     // const event = selectFeaturedEvent();
-    // const { name, image, description } = event;
+    // const { name:eventName, image:eventImage, description:eventDescription } = event;
 
     return (
         <Container>
@@ -23,10 +24,14 @@ const InCider = () => {
                 bringing you news and 'an apple a day'
                     </p>
                 </Col>
-                <Col className='col-6'>
-                    <FeaturedEventCard />
-                </Col>
-                <Col className='col-6'>
+                {/* <Col>
+                    <DisplayList />
+                </Col> */}
+                {/* <Col className='col-6'>
+                    <FeaturedEventCard event={event} />
+                    {/* event={event} 
+                </Col>*/}
+                <Col className='col-12'>
                     <FeaturedProducerCard producer = {producer} />
                 </Col>
                 <Col className='col-12 m-3'>

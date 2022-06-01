@@ -1,21 +1,25 @@
 import { Col, Row, Card, CardBody, CardHeader } from 'reactstrap'; 
-import Orchard1 from '../../app/assets/images/orchard1.png';
+import { selectFeaturedEvent } from './eventsSlice';
+import React from 'react';
 
-const FeaturedEventCard = () => {
+const FeaturedEventCard = (props) => {
+    const event = selectFeaturedEvent();
+    console.log(props);
+    const { name, image, description } = props.event;
+
     return(
             <Card>
                 <CardHeader>
-                    <h3>Featured Events Card</h3>
+                    <h3>{name}</h3>
                 </CardHeader>
                 <CardBody >
                     <Row>
                         <Col className='col-12'>
-                        {/* <h1>Header / Orchard</h1> */}
-                        <img src={Orchard1} alt='orchard with apples' width='200rem' className='align-items self-center'/>
-                        <p> Content filler text. Lorum Ipsum</p>
+                        <img src={image} alt={name} width='200rem' className='align-items self-center'/>
                         </Col>
                         <Col className='col-12'>
-                            <p>
+                            <p>{description}</p>
+                            {/* <p>
                                 Description and additional information 
                                 <br></br>
                                 contact
@@ -29,7 +33,7 @@ const FeaturedEventCard = () => {
                                 google.maps
                                 <br></br>
                                 website
-                            </p>
+                            </p> */}
                         </Col>
                     </Row>
                 </CardBody>

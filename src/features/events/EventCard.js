@@ -1,20 +1,25 @@
-import { Col, Card, CardBody, CardHeader } from 'reactstrap'; 
-import ApplE from '../../app/assets/images/ApplE.jpeg';
+import { Card, CardTitle, CardBody, CardText, CardImg } from 'reactstrap';
+import { Link } from 'react-router-dom';
+// import ApplE from '../../app/assets/images/ApplE.jpeg';
 
-const EventCard = () => {
+const EventCard = ({ event }) => {
+    const { id, image, name } = event;
+
     return(
-        <Col>
+        <Link to={`${id}`}>
             <Card>
-                <CardHeader>
-                    <h1>Default Events Card</h1>
-                </CardHeader>
-                <CardBody >
-                    <h1>Header</h1>
-                    <p> Content filler text. Lorum Ipsum</p>
-                    <img src={ApplE} alt='low quality apple jpeg file' width='100rem' /> 
+                <CardImg varient='top' 
+                    src={image} 
+                    alt={name}
+                /> 
+                <CardBody>
+                    <CardTitle tag='h5'>{name}</CardTitle>
+                <CardText>
+                    {/* {description} only x amount of characters */}
+                </CardText>
                 </CardBody>
             </Card>
-        </Col>
+        </Link> 
     )
 };
 

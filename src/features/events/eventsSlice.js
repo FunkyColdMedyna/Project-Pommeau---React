@@ -12,6 +12,6 @@ export const selectEventById = (id) => {
     return EVENTS.find((event) => event.id === id);
 }
 
-export const selectFeaturedEvent = (featured) => {
-    return EVENTS.find((event) => event.featured === featured)
+export const selectFeaturedEvent = () => {
+    return EVENTS.find((event) => event.featured)
 };

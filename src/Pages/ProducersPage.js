@@ -1,6 +1,6 @@
 import {Col, Row, Container, Card, CardBody,  } from 'reactstrap';
 import ProducersList from '../features/producers/ProducersList';
-import ProducerDetail from '../features/producers/ProducerDetail';
+// import ProducerDetail from '../features/producers/ProducerDetail';
 import { selectProducerById } from '../features/producers/producersSlice';
 // import { selectRandomProducer } from '../features/producers/producersSlice';
 // import ProducerCard from '../features/producers/ProducerCard';

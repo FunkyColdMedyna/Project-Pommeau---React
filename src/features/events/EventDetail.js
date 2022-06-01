@@ -1,6 +1,6 @@
-import { Card, CardImg, CardText, CardBody, Col } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, Col, CardImgOverlay, CardTitle } from 'reactstrap';
 
-const EventDetail = ( {event} ) => {
+const EventDetail = ( { event } ) => {
     const { image, name, description } = event;
 
     return (
@@ -11,6 +11,9 @@ const EventDetail = ( {event} ) => {
                     <CardText>{description}</CardText>
                     {/* add links to external producer sites . google maps. etc. producer contact info */}
                 </CardBody>
+                <CardImgOverlay>
+                    <CardTitle>{name}</CardTitle>
+                </CardImgOverlay>
             </Card>
         </Col>
     );

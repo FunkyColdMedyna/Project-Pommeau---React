@@ -1,18 +1,13 @@
 // import React from "react";
 // import { Card, CardHeader, CardBody } from 'reactstrap';
 // import Apple6 from '../../app/assets/images/apple6.png';
-
 import { Card, CardTitle, CardBody, CardText, CardImg } from 'reactstrap';
-// import { Card, CardImgOverlay, CardImg, CardTitle } from 'reactstrap';
 import { Link } from 'react-router-dom';
-
-
-
 
 const ProducerCard = ({ producer }) => {
     const { id, image, name, } = producer;
     return (
-        <Link to={id}>
+        <Link to={`${id}`}>
             <Card>
                 <CardImg varient='top' 
                     src={image} 
