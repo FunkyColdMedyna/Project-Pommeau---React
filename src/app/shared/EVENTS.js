@@ -6,7 +6,7 @@ export const EVENTS = [
         id: 0,
         name: 'Event1',
         image: Apple7,
-        featured: false,
+        featured: true,
         description:
             "Event description. Whats going on? Is it a networking event? Is it a demo where we see some productino? Is it a tour of an orchard or a production facility? Perhaps even a pick-your-own sign up to walk through some orchards?"
     },

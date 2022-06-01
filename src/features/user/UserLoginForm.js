@@ -10,10 +10,10 @@ import {
     Button
 } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import defaultAvatar from '../../app/assets/img/apple2.png';
-import { validateUserLoginform } from '../../utils/validateUserLoginForm';
+import defaultAvatar from '../../app/assets/images/apple2.png';
+import { validateUserLoginForm } from '../../utils/validateUserLoginForm';
 import { logoutUser } from './userSlice';
-​
+
 const UserLoginForm = () => {
     const [loginModalOpen, setLoginModalOpen] = useState(false)
     const currentUser = useSelector(selectCurrentUser)
@@ -28,7 +28,7 @@ const UserLoginForm = () => {
         dispatch(setCurrentUser(currentUser))
         setLoginModalOpen(false)
     }
-​
+
     const handleLogout = () => {
         dispatch(logoutUser())
     }
@@ -61,7 +61,7 @@ const UserLoginForm = () => {
                     <Formik
                         initialValues={{ username: "", password: "" }}
                         onSubmit={handleLogin}
-                        validate={validateUserLoginform}
+                        validate={validateUserLoginForm}
                     >
                         <Form>
                             <FormGroup>
@@ -87,5 +87,5 @@ const UserLoginForm = () => {
         </>
     )
 }
-​
+
 export default UserLoginForm
