@@ -11,7 +11,7 @@ const FeaturedMarketCard = ( marketId ) => {
             <CardBody>
                 <Row>
                     <Col className='col-12'>
-                        <img src={image} alt={name} width='200rem' />
+                        <img src={image} alt={name} class='card-detail' />
                     </Col>
                     <Col className='col-12'>
                         <p>{description}</p>

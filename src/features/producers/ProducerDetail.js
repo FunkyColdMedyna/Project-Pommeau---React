@@ -6,7 +6,10 @@ const ProducerDetail = ( {producer} ) => {
     return (
         <Col md='12' className='m-4'>
             <Card>
-                <CardImg top src={image} alt={name} />
+                <CardImg 
+                className='card-detail'
+                top src={image} 
+                alt={name} />
                 <CardBody>
                     <CardText>{description}</CardText>
                     {/* add links to external producer sites . google maps. etc. producer contact info */}

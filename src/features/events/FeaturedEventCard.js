@@ -15,7 +15,7 @@ const FeaturedEventCard = (props) => {
                 <CardBody >
                     <Row>
                         <Col className='col-12'>
-                        <img src={image} alt={name} width='200rem' className='align-items self-center'/>
+                        <img src={image} alt={name} className='card-grid'/>
                         </Col>
                         <Col className='col-12'>
                             <p>{description}</p>

@@ -1,6 +1,7 @@
 import { Card, CardTitle, CardBody, CardText, CardImg } from 'reactstrap';
 import { Link } from 'react-router-dom';
 // import ApplE from '../../app/assets/images/ApplE.jpeg';
+import '../../styles.css'
 
 const EventCard = ({ event }) => {
     const { id, image, name } = event;
@@ -8,7 +9,7 @@ const EventCard = ({ event }) => {
     return(
         <Link to={`${id}`}>
             <Card>
-                <CardImg varient='top' 
+                <CardImg varient='top' className='card-grid'
                     src={image} 
                     alt={name}
                 /> 

@@ -9,7 +9,7 @@ const MarketDetail = ( { market } ) => {
                 <CardHeader>
                     <h1>FEATURED PRODUCT OF THE WEEK</h1>
                 </CardHeader>
-                <CardImg src={image} alt={name} />
+                <CardImg class='card-detail' src={image} alt={name} />
                 <CardBody>
                     <CardText>{description}</CardText>
                     <CardText tag='h3'>{price}</CardText>

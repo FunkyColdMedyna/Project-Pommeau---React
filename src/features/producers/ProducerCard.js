@@ -3,14 +3,16 @@
 // import Apple6 from '../../app/assets/images/apple6.png';
 import { Card, CardTitle, CardBody, CardText, CardImg } from 'reactstrap';
 import { Link } from 'react-router-dom';
+import '../../styles.css'
 
 const ProducerCard = ({ producer }) => {
     const { id, image, name, } = producer;
     return (
         <Link to={`${id}`}>
-            <Card>
-                <CardImg varient='top' 
-                    src={image} 
+            <Card >
+                <CardImg 
+                    className='card-grid'
+                    src={image}
                     alt={name}
                 /> 
                 <CardBody>

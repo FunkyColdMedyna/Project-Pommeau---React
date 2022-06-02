@@ -7,7 +7,7 @@ const MarketCard = ({ market }) => {
     return (
         <Link to={id}>
             <Card>
-                <CardImg varient='top' 
+                <CardImg varient='top' className='card-grid'
                     src={image} 
                     alt={name}
                 /> 
