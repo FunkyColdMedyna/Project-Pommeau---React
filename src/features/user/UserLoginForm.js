@@ -10,7 +10,7 @@ import {
     Button
 } from 'reactstrap';
 import { Formik, Field, Form, ErrorMessage } from 'formik';
-import defaultAvatar from '../../app/assets/images/apple2.png';
+import defaultAvatar from '../../app/assets/images/ApplE.jpeg';
 import { validateUserLoginForm } from '../../utils/validateUserLoginForm';
 import { logoutUser } from './userSlice';
 

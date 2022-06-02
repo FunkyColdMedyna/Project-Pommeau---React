@@ -1,5 +1,6 @@
 import { Col, Row, Card, CardBody, CardHeader, CardFooter } from 'reactstrap'; 
 // import Apple4 from '../../app/assets/images/apple4.png';
+import '../../styles.css';
 
 const FeaturedMarketCard = ( marketId ) => {
     const { id, image, name, description } = marketId;

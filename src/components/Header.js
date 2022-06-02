@@ -9,7 +9,7 @@ import {
 } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import Apple9 from '../app/assets/images/apple9.png';
-// import UserLoginForm from '../features/user/UserLoginForm';
+import UserLoginForm from '../features/user/UserLoginForm';
 
 
 const Header = () => {
@@ -50,9 +50,8 @@ const Header = () => {
                             <i className='fa fa-info fa-lg' /> About
                         </NavLink>
                     </NavItem>
-                    {/* Login - needs form/modal */}
                 </Nav>
-                {/* <UserLoginForm /> */}
+                <UserLoginForm />
             </Collapse>
         </Navbar>
     )
