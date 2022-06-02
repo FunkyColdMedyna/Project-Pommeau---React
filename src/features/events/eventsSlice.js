@@ -1,16 +1,16 @@
 import { EVENTS } from "../../app/shared/EVENTS";
-import { createSlice } from "@reduxjs/toolkit";
+// import { createSlice } from "@reduxjs/toolkit";
 
-const initialState = {
-    eventsArray: EVENTS
-};
+// const initialState = {
+//     eventsArray: EVENTS
+// // };
 
-const eventsSlice = createSlice({
-    name: 'events',
-    initialState
-});
+// const eventsSlice = createSlice({
+//     name: 'events',
+//     initialState
+// });
 
-export const eventsReducer = eventsSlice.reducer;
+// export const eventsReducer = eventsSlice.reducer;
 
 
 

@@ -1,4 +1,4 @@
-import { Col, Row, Card, CardBody, CardHeader } from 'reactstrap'; 
+import { Col, Row, Card, CardBody, CardHeader, Container } from 'reactstrap'; 
 import { selectFeaturedProducer } from './producersSlice';
 import React from 'react';
 // import '../../styles.css'
@@ -15,22 +15,23 @@ const FeaturedProducerCard = (props) => {
                 <h3>{name}</h3>
             </CardHeader>
             <CardBody>
-                <Row>
-                    <Col className='col-12'>
-                    <img src={image} alt={name} className='card-grid' />
-                    </Col>
-                    <Col className='col-12'>
-                            <p> {description}
-                            </p>
+                    <Row>
+                        <Col className='col-12'>
+                        <img src={image} alt={name} className='card-grid' />
                         </Col>
-                </Row>
-                <footer>
-                    <div>
-                        <p>
-                            links for producer here
-                        </p>
-                    </div>
-                </footer>
+                        <Col className='col-12'>
+                                <p> {description}
+                                </p>
+                            </Col>
+                    </Row>
+                
+                    <footer>
+                        <div>
+                            <p>
+                                links for producer here
+                            </p>
+                        </div>
+                    </footer>
             </CardBody>
         </Card>
     )

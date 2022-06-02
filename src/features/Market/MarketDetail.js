@@ -1,4 +1,6 @@
 import { Card, CardImg, CardHeader, CardText, CardBody, Col, Container, Row, Button } from 'reactstrap';
+import '../../styles.css'
+
 
 const MarketDetail = ( { market } ) => {
     const { image, name, description, price } = market;
@@ -9,7 +11,7 @@ const MarketDetail = ( { market } ) => {
                 <CardHeader>
                     <h1>FEATURED PRODUCT OF THE WEEK</h1>
                 </CardHeader>
-                <CardImg class='card-detail' src={image} alt={name} />
+                <CardImg className='card-detail' src={image} alt={name} />
                 <CardBody>
                     <CardText>{description}</CardText>
                     <CardText tag='h3'>{price}</CardText>

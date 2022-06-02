@@ -1,4 +1,5 @@
 import { Card, CardImg, CardText, CardBody, Col, CardTitle, CardImgOverlay } from 'reactstrap';
+import '../../styles.css'
 
 const ProducerDetail = ( {producer} ) => {
     const { image, name, description } = producer;

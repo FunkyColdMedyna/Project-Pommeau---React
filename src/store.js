@@ -4,7 +4,8 @@ import { eventsReducer } from "./features/events/eventsSlice.js"
 
 export const store = configureStore({
   reducer: {
-    events: eventsReducer },
+    // events: eventsReducer 
+  },
   middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat([logger])
 });
 

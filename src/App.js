@@ -9,7 +9,7 @@ import Footer from './components/Footer';
 import './App.css';
 import ProducerDetailPage from './pages/ProducerDetailPage';
 import EventDetailPage from './pages/EventDetailPage';
-import './'
+// import './'
 
 function App() {
   return (
