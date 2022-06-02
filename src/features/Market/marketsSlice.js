@@ -1,14 +1,17 @@
 // import { createSlice } from '@reduxjs/toolkit';
 import { MARKET } from "../../app/shared/MARKET";
+import { createSlice } from "@reduxjs/toolkit";
 
-// const initialState = {
-//     marketArray: MARKET
-// };
+const initialState = {
+    marketArray: MARKET
+};
 
-// const marketsSlice = createSlice({
-//     name: 'market',
-//     initialState
-// });
+const marketsSlice = createSlice({
+    name: 'markets',
+    initialState
+});
+
+export const marketsReducer = marketsSlice.reducer;
 
 export const selectAllMarkets = () => {
     return MARKET;
