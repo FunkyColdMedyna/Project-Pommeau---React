@@ -23,7 +23,7 @@ export const selectRandomEvent = () => {
 };
 
 export const selectEventById = (id) => {
-    return EVENTS.find((event) => event.id === id);
+    return EVENTS.find((event) => event.id === parseInt(id));
 }
 
 export const selectFeaturedEvent = () => {
