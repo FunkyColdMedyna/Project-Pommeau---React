@@ -17,7 +17,7 @@ const ProducersPage = () => {
     // };
 
     return (
-        <Container>
+        <Container className='background-main'>
             <Row className='row-content'>
                 <Col className= 'col-12'>
                     <h2>Producers</h2>

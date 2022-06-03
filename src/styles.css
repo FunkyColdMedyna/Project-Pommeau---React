@@ -10,3 +10,17 @@
     object-fit: cover;
 }
 
+.navBar-main {
+    background-color: #f58d16;
+    color: white,
+}
+
+.background-main{
+    background-color:#167EF5;
+    padding:0;
+    margin:0;
+
+
+}
+/* secondary #167EF5
+    Terciary #90C2FA */

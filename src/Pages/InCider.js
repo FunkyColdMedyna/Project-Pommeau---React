@@ -16,7 +16,7 @@ const InCider = () => {
     const { name:eventName, image:eventImage, description:eventDescription } = event;
 
     return (
-        <Container>
+        <Container className='background-main'>
             <Row className='row-content'>
                 <Col className='col-12'>
                     <h1>In-Cider</h1>
@@ -33,10 +33,10 @@ const InCider = () => {
                 <Col className='col-6'>
                     <FeaturedProducerCard producer = {producer} />
                 </Col>
-                <Col className='col-12 m-3'>
+                <Col className='col-12'>
                     <Card className='bg-light mt-3'>
                         <CardBody>
-                            <blockquote className='blockquote m-2'>
+                            <blockquote className='blockquote'>
                                 <p> I will not follow where the path may lead, but I
                                     will go where there is no path, and I will leave
                                     a trail.
@@ -54,8 +54,8 @@ const InCider = () => {
                 </Col>
             </Row>
             <Row>
-                <Col mt='3'>
-                    <SubscriptionTiers />
+                <Col className='mt-3'>
+                    <SubscriptionTiers className='mb-3'/>
                 </Col>
             </Row>
         </Container>
