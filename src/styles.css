@@ -21,5 +21,16 @@
     width: 100vw;
 
 }
+
+.grid-margin{
+    margin-top: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3;
+}
+
+.text-header{
+    color:white;
+}
 /* secondary #167EF5
     Terciary #90C2FA */

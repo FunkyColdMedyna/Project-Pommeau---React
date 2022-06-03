@@ -5,15 +5,17 @@ import { selectAllMarkets } from "./marketsSlice";
 const MarketsList = ({setMarketId}) => {
     const markets = selectAllMarkets();
     return (
-        <Row className="ms-auto">
+        <Row className="grid-margin">
             {markets.map((market) => {
                 return (
                     <Col 
+                        className=""
                         md='4'
                         key={market.id}
                         onClick={() => setMarketId(market.id)}
+                       
                     >
-                        <MarketCard market={market} />
+                        <MarketCard className='' market={market} />
                     </Col>
                 );
             })}

@@ -19,7 +19,7 @@ const InCider = () => {
     return (
         <Container className='background-main container-fluid'>
             <Row className='row-content'>
-                <Col className='col-12 '>
+                <Col className='col-12 text-header'>
                     <h1>In-Cider</h1>
                     <p>
                 bringing you news and 'an apple a day'

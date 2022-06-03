@@ -13,8 +13,16 @@ const MarketPage = () => {
     return (
         <Container>
             <Row className='row-content'>
+                <Col className='col-12 text-header'>
+                    <h1>FEATURED PRODUCT OF THE WEEK</h1>
+                </Col>
                 <Col className='col-12 my-2'>
                     <MarketDetail market={selectedMarket} />
+                </Col>
+                <br/>
+                <br/>
+                <Col className='col-12 text-header mt-4'>
+                    <h1>OTHER PRODUCTS:</h1>
                 </Col>
                 <Col>
                     <MarketsList setMarketId={setMarketId}/>

@@ -19,7 +19,7 @@ const ProducersPage = () => {
     return (
         <Container className='background-main'>
             <Row className='row-content'>
-                <Col className= 'col-12'>
+                <Col className= 'col-12 text-header'>
                     <h2>Producers</h2>
                     <p>
                 find out who is making and growing the product

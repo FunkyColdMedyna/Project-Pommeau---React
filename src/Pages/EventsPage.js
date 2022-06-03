@@ -11,7 +11,7 @@ const EventsPage = () => {
     
     return (
         <Container>
-            <Row className='row-content'>
+            <Row className='row-content text-header'>
                 <Col mt='1'>
                     <h3>Events</h3>
                     <p>
