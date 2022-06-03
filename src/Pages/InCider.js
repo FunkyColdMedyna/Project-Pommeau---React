@@ -10,15 +10,16 @@ const InCider = () => {
     // const items = [selectFeaturedProducer(), selectFeaturedEvent()];
     const producer = selectFeaturedProducer();
     console.log(producer);
-    const { name, image, description, } = producer;
+    // const { name, image, description, } = producer;
 
     const event = selectFeaturedEvent();
-    const { name:eventName, image:eventImage, description:eventDescription } = event;
+    console.log(event);
+    // const { name:eventName, image:eventImage, description:eventDescription } = event;
 
     return (
-        <Container className='background-main'>
+        <Container className='background-main container-fluid'>
             <Row className='row-content'>
-                <Col className='col-12'>
+                <Col className='col-12 '>
                     <h1>In-Cider</h1>
                     <p>
                 bringing you news and 'an apple a day'

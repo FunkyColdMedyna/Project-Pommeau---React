@@ -13,7 +13,7 @@ import EventDetailPage from './pages/EventDetailPage';
 
 function App() {
   return (
-    <div className='App'>
+    <div className='background-main App'>
       <Header />
         <Routes>
           <Route path='/' element={<InCider />} />

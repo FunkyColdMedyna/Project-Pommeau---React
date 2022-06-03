@@ -25,13 +25,13 @@ const FeaturedProducerCard = (props) => {
                             </Col>
                     </Row>
                 
-                    <footer>
+                    {/* <footer>
                         <div>
                             <p>
                                 links for producer here
                             </p>
                         </div>
-                    </footer>
+                    </footer> */}
             </CardBody>
         </Card>
     )

@@ -17,9 +17,8 @@
 
 .background-main{
     background-color:#167EF5;
-    padding:0;
-    margin:0;
-
+    /* margin: 0!important; */
+    width: 100vw;
 
 }
 /* secondary #167EF5
