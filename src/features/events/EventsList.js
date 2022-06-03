@@ -8,13 +8,16 @@ const EventsList = ({setEventId}) => {
         <Row className="ms-auto">
             {events.map((event) => {
                 return (
-                    <Col 
-                        md='4'
-                        key={event.id}
-                        onClick={() => setEventId(event.id)}
-                    >
-                        <EventCard event={event} />
-                    </Col>
+                    <>
+                        <Col 
+                            className="my-2"
+                            md='12'
+                            key={event.id}
+                            onClick={() => setEventId(event.id)}
+                        >
+                            <EventCard event={event} />
+                        </Col>
+                    </>
                 );
             })}
         </Row>

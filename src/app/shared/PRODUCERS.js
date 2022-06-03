@@ -59,5 +59,21 @@ export const PRODUCERS = [
         featured: false,
         description:
             'Producer6 is a wine-maker turned Pommelier. Their love and their dedication to the craft really shines through in their product. Reminiscent of some of the greater houses of Champagne this cider has fooled many a proffessional in blind tastings. Some have even called them the `Selosse of the Hudson Valley`.'
-    }
+    },
+    {
+        id: 6,
+        name: 'Producer7',
+        image: apple2,
+        featured: false,
+        description:
+            'Producer7 is a wine-maker turned couch-potato. Their love and their dedication to the craft really shines through in their product. Reminiscent of some of the greater houses of Champagne this cider has fooled many a proffessional in blind tastings. Some have even called them the `Selosse of the Hudson Valley`.'
+    },
+    {
+        id: 7,
+        name: 'Producer8',
+        image: apple3,
+        featured: false,
+        description:
+            'Producer8 is a wine-maker turned crow. Their love and their dedication to the craft really shines through in their product. Reminiscent of some of the greater houses of Champagne this cider has fooled many a proffessional in blind tastings. Some have even called them the `Selosse of the Hudson Valley`.'
+    },
 ];

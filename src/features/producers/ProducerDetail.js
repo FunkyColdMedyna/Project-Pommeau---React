@@ -21,13 +21,16 @@ const ProducerDetail = ({ producer }) => {
             <Card>
                 <CardTitle>
                     <h2>{name}</h2>
-                    <h6>Quick Links</h6>
+                    {/* <h6>Quick Links</h6> */}
                 </CardTitle>
                 <CardBody>
                     <Container>
                         <Row>
+                            <Col>
+                                <CardImg src={image} className="card-detail" />
+                            </Col>
                             <Col md='6'>
-                                            <a
+                                <a
                                 role="button"
                                 className="btn btn-link"
                                 href="mailto:notreal@notreal.com"
@@ -61,15 +64,13 @@ const ProducerDetail = ({ producer }) => {
                                 </a>{" "}
                                 <br />
                                 <br />
-                            </Col>
-                            <Col>
-                                <CardImg src={image} className="card-detail" />
+                                <p>{description}</p>
                             </Col>
                         </Row>
                     </Container>
-                    <Container>
+                    {/* <Container>
                         <p>{description}</p>
-                    </Container>
+                    </Container> */}
                 </CardBody>
             </Card>
             </Col>

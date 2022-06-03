@@ -10,11 +10,11 @@ const ProducersList = ({setProducerId}) => {
             {producers.map((producer) => {
                 return (
                     <Col 
-                        md='4'
+                        md='3'
                         key={producer.id}
                         onClick={() => setProducerId(producer.id)}
                     >
-                        <ProducerCard producer={producer} />
+                        <ProducerCard producer={producer} className="m-1 "/>
                     </Col>
                 );
             })}

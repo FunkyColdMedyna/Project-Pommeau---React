@@ -1,10 +1,10 @@
-import { Card, CardTitle, CardBody, CardText, CardImg } from 'reactstrap';
+import { Card, CardTitle, CardBody, CardText, CardImg, Col, Row, Container } from 'reactstrap';
 import { Link } from 'react-router-dom';
 // import ApplE from '../../app/assets/images/ApplE.jpeg';
 import '../../styles.css'
 
 const EventCard = ({ event }) => {
-    const { id, image, name } = event;
+    const { id, image, name, date, time} = event;
 
     return(
         <Link to={`${id}`}>
@@ -16,7 +16,19 @@ const EventCard = ({ event }) => {
                 <CardBody>
                     <CardTitle tag='h5'>{name}</CardTitle>
                 <CardText>
-                    {/* {description} only x amount of characters */}
+                    <Container>
+                        <Row>
+                            <Col sm='4'>
+                                <p>Event Name:{name}</p>;
+                            </Col>
+                            <Col sm='4'>
+                                <p>Event Date: {date}</p>
+                            </Col>
+                            <Col sm='4'>
+                                <p>Event Time: {time}</p>
+                            </Col>
+                        </Row>
+                    </Container>
                 </CardText>
                 </CardBody>
             </Card>
