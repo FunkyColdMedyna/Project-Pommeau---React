@@ -12,13 +12,10 @@ export const PRODUCERS = [
         image: apple2,
         featured: false,
         description:
-            "Producer1 supplies you with the cider you need at prices you can't beat. Family run for 100 generations, they've actually been around longer than our great nation. Respect their traditions and their palate"
-    //     comments:[ 
-    //         {
-    //     },
-    //     {
-    //     },
-    // ]
+            "Producer1 supplies you with the cider you need at prices you can't beat. Family run for 100 generations, they've actually been around longer than our great nation. Respect their traditions and their palate",
+        comments:[
+            'this is comment #1', 
+        ]
     },
     {
         id: 1,
@@ -26,7 +23,9 @@ export const PRODUCERS = [
         image: apple3,
         featured: false,
         description:
-            'Producer2 is a hedge-fund tycoon turned native. Purchasing a fallow orchard and re-vitlizing the local community within the hudson valley. This producer has added dozens of jobs and brings along some very traditional dry ciders. Focusing on technique and innovation to bring their products into the 22nd century.'
+            'Producer2 is a hedge-fund tycoon turned native. Purchasing a fallow orchard and re-vitlizing the local community within the hudson valley. This producer has added dozens of jobs and brings along some very traditional dry ciders. Focusing on technique and innovation to bring their products into the 22nd century.',
+        comment: 
+            'this is a comment#2'
     },
     {
         id: 2,

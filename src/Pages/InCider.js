@@ -5,6 +5,7 @@ import FeaturedProducerCard from '../features/producers/FeaturedProducerCard';
 import SubscriptionTiers from '../components/SubscriptionTiers';
 import { selectFeaturedProducer } from '../features/producers/producersSlice';
 import { selectFeaturedEvent } from '../features/events/eventsSlice';
+import ReviewCard from '../features/comments/ReviewCard';
 
 const InCider = () => {
     // const items = [selectFeaturedProducer(), selectFeaturedEvent()];
