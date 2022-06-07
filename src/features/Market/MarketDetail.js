@@ -12,7 +12,7 @@ const MarketDetail = ( { market } ) => {
                 <CardBody>
                     <CardText>{description}</CardText>
                     <CardText tag='h3'>{price}</CardText>
-                    <Button>Buy Now</Button>
+                    <Button className='btn-lg'>Buy Now</Button>
 
                     {/* Design Market Detail */}
                 </CardBody>
