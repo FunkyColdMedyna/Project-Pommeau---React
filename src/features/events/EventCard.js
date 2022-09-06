@@ -19,7 +19,7 @@ const EventCard = ({ event }) => {
                     <Container>
                         <Row>
                             <Col sm='4'>
-                                <p>Event Name:{name}</p>;
+                                <p>Event Name:{name}</p>
                             </Col>
                             <Col sm='4'>
                                 <p>Event Date: {date}</p>

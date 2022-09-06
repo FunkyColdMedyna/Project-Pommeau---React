@@ -26,9 +26,12 @@ const EventDetail = ( { event } ) => {
                     </CardText>
                     {/* add links to external producer sites . google maps. etc. producer contact info */}
                 </CardBody>
-                <Button outline color='primary'type='submit' >
+                <Button 
+                    outline color='primary'
+                    type='submit' >
+                    {/* onClick={() => handleSignup()}  */}
                     Sign Up
-                </Button>{' '}
+                </Button>
             </Card>
         </Col>
     );

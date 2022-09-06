@@ -1,4 +1,4 @@
-import { Col, Row, Card, CardBody, CardHeader, CardFooter } from 'reactstrap'; 
+import { Col, Row, Card, CardBody, CardHeader, CardFooter, Button } from 'reactstrap'; 
 // import Apple4 from '../../app/assets/images/apple4.png';
 import '../../styles.css';
 
@@ -20,6 +20,7 @@ const FeaturedMarketCard = ( marketId ) => {
                 </Row>
                 <CardFooter>
                     <div>
+                        {/* order modal &/or confirmation of item added to  cart / fulfilled */}
                         <Button onclick= '' >
                            Buy now here
                         </Button>
