@@ -5,6 +5,7 @@ import EventsList from '../features/events/EventsList.js';
 import { useState } from 'react';
 import { selectEventById } from '../features/events/eventsSlice.js';
 
+
 const EventsPage = () => {
     const [eventId, setEventId] = useState(0);
     const selectedEvent = selectEventById(eventId);

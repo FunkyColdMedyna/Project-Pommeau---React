@@ -9,9 +9,9 @@ import Footer from './components/Footer';
 import './App.css';
 import ProducerDetailPage from './pages/ProducerDetailPage';
 import EventDetailPage from './pages/EventDetailPage';
-// import './'
 
 function App() {
+
   return (
     <div className='background-main App'>
       <Header />
