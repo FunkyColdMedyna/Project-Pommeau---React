@@ -1,10 +1,10 @@
-import { Card, CardImg, CardText, CardBody, Col, CardTitle, Container, Row } from 'reactstrap';
+import { Card, CardImg, CardText, CardBody, Col, CardTitle, Container, Row, Modal, ModalHeader, ModalBody, Button } from 'reactstrap';
 import EventForm from '../../components/EventForm.js';
-// import { useState } from 'react';
+import { useState } from 'react';
 
 const EventDetail = ( { event } ) => {
     const { image, name, description, date, time } = event;
-    // const[eventFormOpen, setEventFormOpen] = useState(false);
+    const[eventFormOpen, setEventFormOpen] = useState(false);
 
     return (
         <>
@@ -35,7 +35,20 @@ const EventDetail = ( { event } ) => {
                 </Col>
             </Row>
             <Row>
-                  <EventForm />
+                <Button
+                    type='button'
+                    onClick={setEventFormOpen(!eventFormOpen)}
+                >
+                    Sign Up
+                </Button>
+                <Modal>
+                    <ModalHeader>
+                        Sign Up
+                    </ModalHeader>
+                    <ModalBody>
+                        <EventForm />
+                    </ModalBody>
+                </Modal>
             </Row>
         </>
     );

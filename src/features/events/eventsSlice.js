@@ -12,7 +12,9 @@ const eventsSlice = createSlice({
 
 export const eventsReducer = eventsSlice.reducer;
 
+// export const setEventId = () => {
 
+// }
 
 export const selectAllEvents = () => {
     return EVENTS;
