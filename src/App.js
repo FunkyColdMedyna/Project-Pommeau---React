@@ -9,14 +9,17 @@ import Footer from './components/Footer';
 import './App.css';
 import ProducerDetailPage from './pages/ProducerDetailPage';
 import EventDetailPage from './pages/EventDetailPage';
+import HomePage from './pages/HomePage.js';
 
 function App() {
 
   return (
     <div className='background-main App'>
+
       <Header />
         <Routes>
           <Route path='/' element={<InCider />} />
+          <Route path='homepage' element={<HomePage />} />
           <Route path='producers' element={<ProducersPage />}/>
           <Route 
             path='producers/:producerId' 

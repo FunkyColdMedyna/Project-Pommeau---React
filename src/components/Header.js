@@ -18,15 +18,16 @@ const Header = () => {
 
     return (
         <Navbar className='navBar-main' sticky='top' expand='md'>
-            <NavbarBrand className='ms-5' href='/'>
+            <NavbarBrand className='ms-4' href='/'>
                 <img src={Apple9} alt='apple' className='float-start' width='70rem' />
                 <h1 className='mt-1'>Project Pommeau</h1>
             </NavbarBrand>
-            <NavbarToggler onClick = {() => setMenuOpen(!menuOpen)} />
+
+            <NavbarToggler color='primary' onClick = {() => setMenuOpen(!menuOpen)} />
             <Collapse isOpen={menuOpen} navbar >
                 <Nav className='ms-auto' navbar>
                     <NavItem>
-                        <NavLink color='white' className ='nav-link' to='/'>
+                        <NavLink className ='nav-link' to='/'>
                             <i className='fa fa-home fa-lg' /> Home
                         </NavLink>
                     </NavItem>

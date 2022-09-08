@@ -7,7 +7,7 @@ import Apple10 from '../../app/assets/images/apple10.png';
 
 export const EVENTS = [
     {
-        id: '0',
+        id: 0,
         name: 'Event1',
         image: Apple7,
         featured: true,
@@ -17,7 +17,7 @@ export const EVENTS = [
             "Event description. Whats going on? Is it a networking event? Is it a demo where we see some productino? Is it a tour of an orchard or a production facility? Perhaps even a pick-your-own sign up to walk through some orchards?"
     },
     {
-        id: '1',
+        id: 1,
         name: 'Event2',
         image: Apple8,
         featured: false,
@@ -27,7 +27,7 @@ export const EVENTS = [
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut dui erat, lacinia egestas nisl vel, porta pretium est. Vestibulum et aliquam elit, vitae tempus ipsum. Aliquam sollicitudin, turpis a dignissim pharetra, sapien lorem rhoncus lectus, et cursus lacus massa congue nulla. Donec libero justo, bibendum non arcu sit amet, convallis hendrerit lorem. Sed risus mi, pellentesque ut feugiat ut"
     },
     {
-        id: '2',
+        id: 2,
         name: 'Event3',
         image: Apple9,
         featured: false,
@@ -37,7 +37,7 @@ export const EVENTS = [
             "Event description. Whats going on? Is it a networking event? Is it a demo where we see some productino? Is it a tour of an orchard or a production facility? Perhaps even a pick-your-own sign up to walk through some orchards?"
     },
     {
-        id: '3',
+        id: 3,
         name: 'Event4',
         image: Apple10,
         featured: false,
@@ -47,7 +47,7 @@ export const EVENTS = [
             "In hendrerit rhoncus leo porttitor euismod. Proin aliquet risus accumsan semper bibendum. Ut luctus convallis orci sit amet elementum. Ut ut augue fermentum, finibus dui vel, mollis eros."
     },
     {
-        id: '4',
+        id: 4,
         name: 'Event5',
         image: Apple7,
         featured: false,

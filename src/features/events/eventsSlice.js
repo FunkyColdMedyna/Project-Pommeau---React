@@ -9,7 +9,7 @@ const eventsSlice = createSlice({
     name: 'events',
     initialState,
     reducers: {
-        
+        // prepare?
     }
 });
 
@@ -22,7 +22,7 @@ export const selectRandomEvent = () => {
 };
 
 export const selectEventById = (id) => {
-    return EVENTS.find((event) => event.id === parseInt(id));
+    return EVENTS.find((event) => event.id === (id));
 }
 
 export const selectFeaturedEvent = () => {
