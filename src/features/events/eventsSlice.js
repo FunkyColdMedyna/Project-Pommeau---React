@@ -1,5 +1,6 @@
 import { EVENTS } from "../../app/shared/EVENTS";
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice, nanoid } from "@reduxjs/toolkit";
+import { sub } from 'date-fns';
 
 const initialState = {
     eventsArray: EVENTS
@@ -7,14 +8,11 @@ const initialState = {
 
 const eventsSlice = createSlice({
     name: 'events',
-    initialState
+    initialState,
+    reducers: {
+
+    }
 });
-
-export const eventsReducer = eventsSlice.reducer;
-
-// export const setEventId = () => {
-
-// }
 
 export const selectAllEvents = () => {
     return EVENTS;
@@ -31,4 +29,9 @@ export const selectEventById = (id) => {
 export const selectFeaturedEvent = () => {
     return EVENTS.find((event) => event.featured)
 };
+
+export const eventsReducer = eventsSlice.reducer;
+
+export default eventsSlice.reducer
+
 

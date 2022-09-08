@@ -7,7 +7,10 @@ const initialState = {
 
 const producersSlice = createSlice({
     name: 'producers',
-    initialState
+    initialState,
+    reducers: {
+
+    }
 });
 export const producerReducer = producersSlice.reducer;
 
@@ -26,3 +29,5 @@ export const selectProducerById = (id) => {
 export const selectFeaturedProducer = () => {
     return PRODUCERS.find((producer) => producer.featured); 
 };
+
+export default producersSlice.reducer
