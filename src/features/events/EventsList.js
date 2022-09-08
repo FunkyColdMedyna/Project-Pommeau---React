@@ -14,7 +14,7 @@ const EventsList = ({setEventId}) => {
                         <Col 
                             className="my-2"
                             md='12'
-                            key={nanoid()}  
+                            key={nanoid()}
                             onClick={() => setEventId(event)}
                         >
                             <EventCard event={event} />

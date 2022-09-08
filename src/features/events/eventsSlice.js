@@ -1,6 +1,5 @@
 import { EVENTS } from "../../app/shared/EVENTS";
-import { createSlice, nanoid } from "@reduxjs/toolkit";
-import { sub } from 'date-fns';
+import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
     eventsArray: EVENTS
@@ -10,7 +9,7 @@ const eventsSlice = createSlice({
     name: 'events',
     initialState,
     reducers: {
-
+        
     }
 });
 
