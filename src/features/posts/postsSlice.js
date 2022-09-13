@@ -71,4 +71,4 @@ export const selectAllPosts = (state) => state.posts;
 
 export const { postAdded, reactionAdded } = postsSlice.actions
 
-export default postsSlice.reducer
+export default postsSlice.reducer;
